@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap');
+
+:root {
+    --main-font:  'IBM Plex Sans Thai', sans-serif;
+    --background-code-color: #596275;
+    --code-color: #EAB543;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    overflow: scroll;
+}
+
+nav a {
+    text-decoration: none;
+    background-image: linear-gradient(#000000, #000000/*currentColor, currentColor*/);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.5s;
+}
+
+nav a:hover, nav a:focus {
+  color: rgb(2, 1, 1);
+  background-size: 100% 2px;
+}
+
+
+#navbar h1 {
+    font-family: var(--main-font);
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 10px;
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    /* overflow-y: auto; */
+}
+
+#navbar li {
+    font-family: var(--main-font);
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    padding: 15px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+.head-title {
+    text-align: left;
+    font-family: var(--main-font);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 16px 16px 20px 0px;
+}
+
+article p {
+    display: block;
+    font-family: var(--main-font); 
+    padding-left: 12px;
+}
+
+article li {
+    display: block;
+    font-family: var(--main-font);
+    
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    color: var(--background-code-color);
+    padding: 10px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section li {
+    display: list-item;
+}
+
+.introduction ul li {
+    margin: 10px 0px 0px 50px;
+}
+
+.you_already_know ul li {
+    margin: 10px 0px 0px 50px;
+}
+
+.js_and_java article p {
+    margin-bottom: 15px;
+}
+
+.variables article p {
+    padding-bottom: 10px;
+}
+
+.declaring_variables article p{
+    padding-bottom: 10px;
+}
+
+.variable_scope article p{
+    padding-bottom: 10px;
+}
+
+.global_variables article p {
+    padding-bottom: 10px;
+}
+
+.constants article p {
+    padding-bottom: 10px;
+}
+
+.data-types article ul li {
+    list-style-type: disc;
+    margin: 15px 0px 0px 40px;
+}
+
+.data-types article ul ul li {
+    list-style-type: circle;
+    display: list-item;
+    margin: 15px 0px 0px 80px;
+}
+
+.if_else article p{
+    padding-bottom: 10px;
+}
+
+.while_statement article ul li {
+    margin: 15px 0px 0px 60px;
+}
+
+.function_declarations article ul li {
+    margin: 15px 0px 0px 60px;
+}
+
+.reference article a {
+    font-weight: bold;
+}
